@@ -29,8 +29,8 @@ async function run() {
         })
     //   get api
         app.get("/addProduct",async(req,res)=>{
-            const cursor = productCollection.find({})
-            const product = await cursor.toArray()
+            const cursors = productCollection.find({})
+            const product = await cursors.toArray()
             res.send(product)
         })
         // delete api 
@@ -60,7 +60,7 @@ async function run() {
                 $set:{
                      pdName : updateProduct.pdName,
                      price :  updateProduct.price,
-                     quantity : updateProduct.quantity
+                     quantity : updateProduct.quantity,
 
                 }  
             }
