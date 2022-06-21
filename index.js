@@ -76,7 +76,7 @@ async function run() {
 
 // example get api
   app.get("/",(req,res)=>{
-    res.send("hello CRUD , I am comming soon....ok lets get started")
+    res.send("hello CRUD APPLICATION I AM COMMNG SOON ...")
   })
 
 app.listen(port,()=>{
